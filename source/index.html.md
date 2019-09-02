@@ -1,15 +1,16 @@
 ---
-title: API Reference
+title: Do GOOD API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
   - ruby
   - python
   - javascript
+  - java 
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
+  - <a href='https://dogood.gn.org'>Gnation</a>
 
 includes:
   - errors
@@ -19,13 +20,16 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the DO GOOD API! This document will describe how to successfully integrate with the DO GOOD API Service payment platform from a developer's perspective.<br>
+The document will describe how to initiate the transaction, how to complete the payment process and how to provide API for callback notification. We will explain what should be implemented from the partner side in order to ensure the data transport security and keep robust sync between the systems.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
+You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
 # Authentication
+
+Authentication nad authorization between services is accomplished using OAuth2 access token.
+
+Access Token is obtained through OAuth2 Client Credentials grant type.
 
 > To authorize, use this code:
 
